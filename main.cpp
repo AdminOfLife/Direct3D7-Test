@@ -22,8 +22,42 @@ void init_graphics() {
 
 // this function initializes and prepares Direct3D for use
 void initD3D(HWND hwnd) {
-
+	/*
+	// Create DirectDraw interface.
+	// Use the current display driver.
+	hr = DirectDrawCreateEx (NULL, (void **)&lpDD, IID_IDirectDraw7, NULL); 
+	if (FAILED (hr))
+	{
+	    // Code to handle the error goes here.
+	}
+	 
+	// Get an IDirect3D7 interface
+	hr = 
+	    lpDD->QueryInterface (IID_IDirect3D7, (void **)&lpD3D);
+	if (FAILED (hr))
+	{
+	    // Code to handle the error goes here.
+	}
+	 
+	//
+	// Code for the following tasks is omitted for clarity.
+	//
+	// Applications must set the cooperative level at this point.
+	// Full-screen applications probably need to set the display 
+	// mode.
+	// The primary surface should be created here.
+	// The rendering surface must be created at this point. It is 
+	// assumed in this code fragment that, once created, the rendering
+	// surface is pointed to by the variable lpddsRender. 
+	// If a z-buffer is being used, it should be created here.
+	// Direct3D device enumeration can be done at this point.
+	 
+	hr = lpD3D->CreateDevice (IID_IDirect3DHALDevice,
+	                               lpddsRender, 
+	                               &lpd3dDevice,
+	                               NULL);
 	HRESULT hr;
+	*/
 	 
 	// Get an IDirectDraw7 interface.
 	// Use the current display driver.
